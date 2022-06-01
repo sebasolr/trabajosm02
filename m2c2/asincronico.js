@@ -7,7 +7,9 @@ const hombre = 1;
 const mujer = 2;
 let nombre = prompt("Hola  cual es tu nombre:");
 let sexo = prompt("porfavor indica tu sexo (1) si eres hombre (2)si eres mujer.");
+sexo = parseInt(sexo);
 let edadjubi = prompt("indica tu edad");
+edadjubi = parseint(edadjubi);
 let tiempoFaltanteM = (jubilacionMujer - edadjubi);
 let tiempoFaltanteH = (jubilacionHombre - edadjubi);
 // if(sexos == sexo && jubilacionMujer <= edadjubi){
