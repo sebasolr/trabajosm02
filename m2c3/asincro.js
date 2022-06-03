@@ -43,10 +43,10 @@
 
   while(i <= 100)
   {
-    if(!(i%15)) {
+    if(!(i%15)) { // i%15 == 0
        console.log("fizzbuzz")
       }
-      else if (!(i%5))
+      else if (!(i%5)) // i%5 == 0
       { 
         console.log("Buzz")
       }
@@ -58,3 +58,5 @@
         i++
       }
     
+0 = ""= false
+1 ="s"= true 
