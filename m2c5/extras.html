@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Basicos</title>
+</head>
+<body>
+    <script>
+//obten del 1 al 255 con una funcion que muestre todos el array
+        
+        function contando(lista){
+            let array = [];
+            for(i=1 ; i <= 255; i+=1){
+                array.push(i)
+            } 
+            return array 
+            }
+        
+//consigue pares hasta 1000
+        function pares(lista){
+        let array2=0;
+        for(i=2;i<=1000; i+=2){
+            if(i%2 === 0){
+                array2 =array2+i;
+            }
+        }
+        return array2
+        }
+// suma impares hasta 5000
+        array3 = 0
+        function impares(lista){
+            let array3=0;
+            for(i=1;i<=5000; i+=2){
+               if(i % 2 != 0){
+                   array3 = array3+i;
+               }
+            }
+            return array3
+        }
+// itera un array
+        function itera([arreglo]){
+            let array4=0;
+            for(i=0; i<=arreglo.length-1; i++){
+            array4 += arreglo[i];
+                
+            }
+            
+            return array4
+        }        
+
+       
+        
+    let suma = 0;
+   function sumera(nums){
+       for(i=0; i<=nums.length-1;i++){
+            suma += nums[i];
+           
+        }
+        return suma
+   }
+console.log(sumera([-5,2,5,12]) )
+    
+let max =0;
+function maximo(nums){
+    for(i=0; i<=nums.length-1;i++){
+        if (nums[i] < nums[i+1]){
+        max = nums[i+1]
+        }
+    }return max
+}
+
+let avgs = 0;
+let avg = 0;
+function promedio(nums){
+    for(i=0;i<=nums.length-1;i++){
+        avg+=nums[i]
+        avgs= avg/nums.length
+    }return avgs
+}
+
+
+function papapares(lista){
+            let prueba = [];
+            for(i=1 ; i <= lista; i+=2){
+                prueba.push(i)
+            } 
+            return prueba
+            }
+console.log(papapares(100))
+
+
+   
+    function mayorque(algo){
+        let may=[];
+        
+        for(i=0;i<=algo.length-1;i++){
+            let mayor = 3;
+            if(algo[i]>mayor){
+                may.push(algo[i])
+               
+             }  
+           }  console.log("Solo "+ may.length + " son mayores que 3, estos son "+ may[0]+ " y "+ may[1] )
+         
+    }
+    </script>
+</body>
+</html>

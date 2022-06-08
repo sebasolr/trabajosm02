@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo">Aurora mejorate</h1>
+    <div></div>
+<script>
+    const h1 =document.querySelector(".titulo");
+    h1.textContent="suerte Aurora"
+    h1.innerHTML="<p>Hola Aurora</p>"
+    const p = document.createElement("p");
+    p.innerHTML="hola mundo";
+    document.body.appendChild(p);
+
+    let div=document.querySelector('div');
+    div.classList.add("style");
+    div.style.height="400px";
+    div.style.background="red";
+
+    
+	let contador = document.createElement("contador");
+	contador.classList.toggle("style") 
+	
+
+setInterval('.style',1000);
+
+    
+
+
+</script>
+
+</body>
+</html>

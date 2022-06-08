@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>Objetos en js</h1>
+
+    <script>
+//objetos se utilizan con { parametro: valor   } 
+let usuario = {
+    nombre :"seba",
+    edad : 33,
+    altura: 177,
+    ciudad: "Quilpue",
+    }
+// para llamar un valor en especifico se debe poner el nombre de la variable[el parametro] o puedo poner variable.parametro y de igual manera llamo el valor
+usuario.altura = 190  //esto sirve para cambiar la variable ahora altura sera 190
+usuario['saludo'] = function(){
+ 
+    for(i=0;i<=10;i++){
+     console.log("hola a todos "+i)  
+    }
+}
+// para arrays de  objetos 
+let alumnos =[
+{nombre:'seba', apellido: 'liberona'},
+{nombre:'elias', apellido: 'dorado'},
+{nombre:'aurora', apellido: 'liberona'}
+]
+console.log(alumnos[1].nombre)
+    </script>
+</body>
+</html>
